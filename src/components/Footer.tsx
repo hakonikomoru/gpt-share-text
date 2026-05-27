@@ -12,6 +12,8 @@ export function Footer() {
       <p>
         非公式ツールです。OpenAI / ChatGPT とは関係ありません。
         <br />
+        会話データはサーバーに保存しません。起こしたテキストはブラウザ上にのみ表示されます。
+        <br />
         共有リンクの公開範囲・利用規約にご注意ください。
       </p>
       <p className="mx-auto mt-4 max-w-md break-words leading-relaxed">
