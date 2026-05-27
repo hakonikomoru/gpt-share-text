@@ -1,5 +1,5 @@
 {
-  "name": "chatgpt-share-text",
+  "name": "gpt-share-text",
   "version": "1.0.0",
   "private": true,
   "description": "ChatGPT 共有 URL から会話をプレーンテキストに起こす Web ツール",

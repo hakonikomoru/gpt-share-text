@@ -2,7 +2,7 @@ export async function fetchChatGptShareHtml(sourceUrl: string): Promise<string> 
   const res = await fetch(sourceUrl, {
     headers: {
       "User-Agent":
-        "Mozilla/5.0 (compatible; ChatGptShareText/1.0; +https://github.com/hakonikomoru/chatgpt-share-text)",
+        "Mozilla/5.0 (compatible; GptShareText/1.0; +https://github.com/hakonikomoru/gpt-share-text)",
       Accept: "text/html",
     },
     cache: "no-store",

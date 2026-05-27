@@ -1,4 +1,4 @@
-# ShareText（chatgpt-share-text）
+# ShareText（gpt-share-text）
 
 ChatGPT の**共有 URL**（`https://chatgpt.com/share/...`）を貼り付けると、会話本文を**プレーンテキスト**に起こす Web ツールです。
 
@@ -14,7 +14,7 @@ ChatGPT の**共有 URL**（`https://chatgpt.com/share/...`）を貼り付ける
 ## 開発
 
 ```bash
-cd ~/app/chatgpt-share-text
+cd ~/app/gpt-share-text
 npm install
 npm run dev
 ```
@@ -23,7 +23,9 @@ http://localhost:3003 で起動します。
 
 ## 本番デプロイ（Vercel 想定）
 
-1. GitHub にリポジトリを作成して push
+リポジトリ名は Vercel の既定ドメイン（`<リポジトリ名>.vercel.app`）に使われるため、`chatgpt` は含めず **`gpt-share-text`** としています（説明文・UI では ChatGPT と表記）。
+
+1. GitHub: https://github.com/hakonikomoru/gpt-share-text
 2. [Vercel](https://vercel.com) で Import
 3. Framework: Next.js（デフォルト）
 

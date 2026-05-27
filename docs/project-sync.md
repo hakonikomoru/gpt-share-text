@@ -1,4 +1,4 @@
-# ShareText（chatgpt-share-text）— Project Sync
+# ShareText（gpt-share-text）— Project Sync
 
 > ChatGPT / 他 AI 向けの同期用ドキュメント。実装前に読むこと。
 
@@ -8,8 +8,9 @@
 
 | 項目 | 内容 |
 |------|------|
-| リポジトリ | `chatgpt-share-text` |
-| ローカルパス | `/Users/ebata/app/chatgpt-share-text` |
+| リポジトリ | `gpt-share-text` |
+| ローカルパス | `/Users/ebata/app/gpt-share-text` |
+| 本番 URL（Vercel 既定） | `https://gpt-share-text.vercel.app`（リポジトリ名ベース） |
 | 概要 | ChatGPT 共有 URL から会話をプレーンテキストに起こす Web ツール |
 
 ---
