@@ -1,4 +1,5 @@
 import { ExtractTool } from "@/components/ExtractTool";
+import { Footer } from "@/components/Footer";
 
 export default function HomePage() {
   return (
@@ -13,20 +14,16 @@ export default function HomePage() {
           テキストに起こす
         </h1>
         <p className="mx-auto mt-4 max-w-lg text-pretty text-[var(--color-muted)]">
-          <code className="text-xs">chatgpt.com/share/...</code>{" "}
+          <code className="rounded bg-slate-100 px-1.5 py-0.5 text-xs text-slate-700">
+            chatgpt.com/share/...
+          </code>{" "}
           を貼るだけ。会話全文をプレーンテキスト化してコピーできます。アカウント登録不要。
         </p>
       </header>
 
       <ExtractTool />
 
-      <footer className="mt-14 border-t border-[var(--color-border)] pt-8 text-center text-xs text-[var(--color-muted)]">
-        <p>
-          非公式ツールです。OpenAI / ChatGPT とは関係ありません。
-          <br />
-          共有リンクの公開範囲・利用規約にご注意ください。
-        </p>
-      </footer>
+      <Footer />
     </div>
   );
 }

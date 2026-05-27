@@ -71,7 +71,7 @@ export function ExtractTool() {
               if (e.key === "Enter") void handleExtract();
             }}
             placeholder="https://chatgpt.com/share/..."
-            className="min-w-0 flex-1 rounded-xl border border-[var(--color-border)] bg-transparent px-4 py-3 text-sm outline-none ring-[var(--color-accent)] focus:ring-2"
+            className="min-w-0 flex-1 rounded-xl border border-[var(--color-border)] bg-white px-4 py-3 text-sm text-slate-900 outline-none ring-[var(--color-accent)] focus:ring-2"
             disabled={extracting}
             autoComplete="off"
           />
@@ -120,7 +120,7 @@ export function ExtractTool() {
             readOnly
             value={text}
             rows={22}
-            className="mt-5 min-h-[min(55vh,520px)] w-full resize-y rounded-xl border border-[var(--color-border)] bg-slate-50/80 p-4 font-mono text-sm leading-relaxed dark:bg-slate-900/50"
+            className="mt-5 min-h-[min(55vh,520px)] w-full resize-y rounded-xl border border-[var(--color-border)] bg-slate-50 p-4 font-mono text-sm leading-relaxed text-slate-800"
             aria-label="起こしたテキスト"
           />
         </section>

@@ -25,7 +25,7 @@ export function CopyButton({ text, className = "" }: Props) {
       type="button"
       onClick={() => void handleCopy()}
       disabled={!text}
-      className={`inline-flex items-center justify-center rounded-lg border border-[var(--color-border)] bg-[var(--color-surface)] px-4 py-2 text-sm font-medium transition hover:bg-slate-50 disabled:opacity-50 dark:hover:bg-slate-800 ${className}`}
+      className={`inline-flex items-center justify-center rounded-lg border border-[var(--color-border)] bg-white px-4 py-2 text-sm font-medium text-slate-700 transition hover:bg-slate-50 disabled:opacity-50 ${className}`}
     >
       {copied ? "コピーしました" : "全文をコピー"}
     </button>
