@@ -51,7 +51,7 @@ http://localhost:3003 で起動します。
 
 ## 制作クレジット（komolab）
 
-**komolab - こもらぼ -** は、箱荷こもる📦️が制作・運営する Web サイトやアプリ共通の制作名です。
+**[komolab - こもらぼ -](https://komoru-laboratory-site.vercel.app/)** は、箱荷こもる📦️が制作・運営する Web サイトやアプリ共通の制作名です。
 
 - フッターおよびクレジットに表示（`src/components/Footer.tsx` / `src/config/site.ts`）
 - 関連ハッシュタグ: `#komolab` / `#こもらぼ`

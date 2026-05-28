@@ -41,7 +41,7 @@
     label: "制作・運営",
     name: "komolab - こもらぼ -",
     hashtags: ["#komolab", "#こもらぼ"],
-    href: undefined, // 将来 /komolab や外部 URL を設定してリンク化
+    href: "https://komoru-laboratory-site.vercel.app/",
   },
 }
 ```
