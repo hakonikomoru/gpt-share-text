@@ -33,8 +33,7 @@ export async function extractChatGptShareTextFromUrl(
   } catch (error) {
     return {
       ok: false,
-      message:
-        error instanceof Error ? error.message : "共有ページの取得に失敗しました。",
+      message: error instanceof Error ? error.message : "共有ページの取得に失敗しました。",
     };
   }
 
@@ -45,8 +44,7 @@ export async function extractChatGptShareTextFromUrl(
   if (bundle.messages.length === 0) {
     return {
       ok: false,
-      message:
-        "会話メッセージを抽出できませんでした。共有リンクの形式が変わった可能性があります。",
+      message: "会話メッセージを抽出できませんでした。共有リンクの形式が変わった可能性があります。",
     };
   }
 

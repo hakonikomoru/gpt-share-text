@@ -1,14 +1,14 @@
-import { dirname } from "node:path";
-import { fileURLToPath } from "node:url";
-import { FlatCompat } from "@eslint/eslintrc";
+import nextVitals from "eslint-config-next/core-web-vitals";
+import nextTypescript from "eslint-config-next/typescript";
+import prettier from "eslint-config-prettier";
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = dirname(__filename);
-
-const compat = new FlatCompat({
-  baseDirectory: __dirname,
-});
-
-const eslintConfig = [...compat.extends("next/core-web-vitals", "next/typescript")];
-
-export default eslintConfig;
+export default [
+  ...nextVitals,
+  ...nextTypescript,
+  prettier,
+  {
+    rules: {
+      "react-hooks/set-state-in-effect": "off",
+    },
+  },
+];

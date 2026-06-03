@@ -9,9 +9,7 @@ export async function fetchChatGptShareHtml(sourceUrl: string): Promise<string> 
   });
 
   if (!res.ok) {
-    throw new Error(
-      `共有ページの取得に失敗しました（${res.status} ${res.statusText}）`,
-    );
+    throw new Error(`共有ページの取得に失敗しました（${res.status} ${res.statusText}）`);
   }
 
   return res.text();

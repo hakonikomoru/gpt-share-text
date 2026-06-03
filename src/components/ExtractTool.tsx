@@ -71,7 +71,7 @@ export function ExtractTool() {
               if (e.key === "Enter") void handleExtract();
             }}
             placeholder="https://chatgpt.com/share/..."
-            className="min-w-0 flex-1 rounded-xl border border-[var(--color-border)] bg-white px-4 py-3 text-sm text-slate-900 outline-none ring-[var(--color-accent)] focus:ring-2"
+            className="min-w-0 flex-1 rounded-xl border border-[var(--color-border)] bg-white px-4 py-3 text-sm text-slate-900 ring-[var(--color-accent)] outline-none focus:ring-2"
             disabled={extracting}
             autoComplete="off"
           />

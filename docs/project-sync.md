@@ -6,12 +6,12 @@
 
 ## 1. 概要
 
-| 項目 | 内容 |
-|------|------|
-| リポジトリ | `gpt-share-text` |
-| ローカルパス | `/Users/ebata/app/gpt-share-text` |
-| 本番 URL（Vercel 既定） | `https://gpt-share-text.vercel.app`（リポジトリ名ベース） |
-| 概要 | ChatGPT 共有 URL から会話をプレーンテキストに起こす Web ツール |
+| 項目                    | 内容                                                           |
+| ----------------------- | -------------------------------------------------------------- |
+| リポジトリ              | `gpt-share-text`                                               |
+| ローカルパス            | `/Users/ebata/app/gpt-share-text`                              |
+| 本番 URL（Vercel 既定） | `https://gpt-share-text.vercel.app`（リポジトリ名ベース）      |
+| 概要                    | ChatGPT 共有 URL から会話をプレーンテキストに起こす Web ツール |
 
 ---
 

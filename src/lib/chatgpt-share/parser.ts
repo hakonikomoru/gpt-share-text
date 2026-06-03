@@ -69,8 +69,7 @@ function extractUserPrompts(html: string): string[] {
   const seen = new Set<string>();
   const prompts: string[] = [];
 
-  const jaRe =
-    /\\"([\u3040-\u30ff\u4e00-\u9fff\uff00-\uffef][^"\\]{12,700}[。？！?])\\"/g;
+  const jaRe = /\\"([\u3040-\u30ff\u4e00-\u9fff\uff00-\uffef][^"\\]{12,700}[。？！?])\\"/g;
   let match: RegExpExecArray | null;
   while ((match = jaRe.exec(html)) !== null) {
     const text = unescapeStreamText(match[1]!).trim();
@@ -129,8 +128,7 @@ function buildMessageList(html: string): Array<{ role: string; content: string }
 
   const primaryUser = userPrompts[0];
   if (primaryUser) ordered.push({ role: "user", content: primaryUser });
-  if (assistantParts[0])
-    ordered.push({ role: "assistant", content: assistantParts[0]! });
+  if (assistantParts[0]) ordered.push({ role: "assistant", content: assistantParts[0]! });
 
   for (let i = 1; i < userPrompts.length; i += 1) {
     ordered.push({ role: "user", content: userPrompts[i]! });
@@ -148,9 +146,7 @@ function buildMessageList(html: string): Array<{ role: string; content: string }
   return ordered;
 }
 
-function dedupeMessages(
-  raw: Array<{ role: string; content: string }>,
-): ChatGptShareMessage[] {
+function dedupeMessages(raw: Array<{ role: string; content: string }>): ChatGptShareMessage[] {
   const out: ChatGptShareMessage[] = [];
   for (const item of raw) {
     const role = item.role as ChatGptShareMessage["role"];

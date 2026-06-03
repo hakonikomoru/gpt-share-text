@@ -7,10 +7,7 @@ export async function POST(req: Request) {
   try {
     body = (await req.json()) as { url?: string };
   } catch {
-    return NextResponse.json(
-      { ok: false, message: "リクエスト形式が不正です。" },
-      { status: 400 },
-    );
+    return NextResponse.json({ ok: false, message: "リクエスト形式が不正です。" }, { status: 400 });
   }
 
   const url = body.url?.trim();
@@ -23,10 +20,7 @@ export async function POST(req: Request) {
 
   const result = await extractChatGptShareTextFromUrl(url);
   if (!result.ok) {
-    return NextResponse.json(
-      { ok: false, message: result.message },
-      { status: 400 },
-    );
+    return NextResponse.json({ ok: false, message: result.message }, { status: 400 });
   }
 
   return NextResponse.json(result);

@@ -14,14 +14,14 @@ export function Footer() {
         <br />
         共有リンクの公開範囲・利用規約にご注意ください。
       </p>
-      <p className="mx-auto mt-4 max-w-md break-words leading-relaxed">
+      <p className="mx-auto mt-4 max-w-md leading-relaxed break-words">
         {credit.label}：
         {credit.href ? (
           <Link
             href={credit.href}
             target="_blank"
             rel="noopener noreferrer"
-            className="transition hover:text-[var(--color-accent)] focus:outline-none focus:ring-2 focus:ring-[var(--color-accent-soft)] focus:ring-offset-2"
+            className="transition hover:text-[var(--color-accent)] focus:ring-2 focus:ring-[var(--color-accent-soft)] focus:ring-offset-2 focus:outline-none"
           >
             {credit.name}
           </Link>
